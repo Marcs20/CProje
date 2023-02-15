@@ -5,8 +5,20 @@ double elevado(double num){
     return num * num * num;
 }
 
+int maiorMenor(int num1, int num2){
+    int res;
+    if(num1>num2){
+        res = num1;
+    }else {
+        res = num2;
+    }
+
+    return res;
+}
+
 int main()
 {
+
     int numero = 10;
     char caracteres[] = "C language";
     /*printf("Hello world! %d\n", numero);
@@ -68,7 +80,9 @@ int main()
 
     sayHi("Marcos");
 
-    printf("%f", elevado(2.5));
+    printf("Elevado ao cubo: %f\n", elevado(2.5));
+
+    printf("Maior: %d\n", maiorMenor(80,80));
 
     return 0;
 }
